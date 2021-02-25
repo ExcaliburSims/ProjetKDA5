@@ -5,16 +5,18 @@
 }
 @font-face {
     font-family: 'Montserrat';
-    src: url('/home/sims/KDA/PROJET/Projet5/fonts/Montserrat/1584538824881-Montserrat-Regular.ttf');
+    src: url('/home/sims/KDA/PROJET/Projet5/fonts/Montserrat/1584538825119-Montserrat-Bold.ttf');
     }
-
+h1,h2,h3,h4,h5,h6,p{
+    font-family: 'Montserrat',sans-serif;
+}
 /*Header*/
 
 header{
     background-color: #d92950;
     display: flex;
     justify-content: space-between;
-    border: 2px black solid;
+    border: 2px #d92950 solid;
 }
 header div ul{
     list-style-type: none;
@@ -43,7 +45,7 @@ header div ul li a{
 .section1{
     background-image :url("../img/section1/hero-background.jpg");
     background-size: cover;
-    border: 2px black solid;
+    border: 2px #d92950 solid;
 }
 #titre1{
     font-size: 5.5vw;
@@ -51,6 +53,49 @@ header div ul li a{
     font-weight: 900;
     margin-bottom: 4vh;
     color: #fff;
+    text-align: center;
+    margin-top: 100px;
+}
+#titre1 strong{
+    color: yellow;
+}
+.btn1{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.btn1 #btn1{
+    text-decoration: none;
+    background-color: seashell;
+    color: #d92950;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px;
+}
+.btn1 a{
+    border-width: 2px;
+}
+.section1 p{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+.partenaire{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+.partenaire ul{
+    list-style-type: none;
+}
+.partenaire ul li{
+    display: inline-block;
+    text-align: center;
+    margin: 50px;
+}
+.partenaire img{
+    width: 40px;
+    opacity: 0.5;
 }
 
 /*section2*/
