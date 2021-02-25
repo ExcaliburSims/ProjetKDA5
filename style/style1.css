@@ -1,0 +1,76 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Montserrat';
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/home/sims/KDA/PROJET/Projet5/fonts/Montserrat/1584538824881-Montserrat-Regular.ttf');
+    }
+
+/*Header*/
+
+header{
+    background-color: #d92950;
+    display: flex;
+    justify-content: space-between;
+    border: 2px black solid;
+}
+header div ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+header div ul li{
+    margin: 30px;
+}
+header div ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+#logo{
+    width: 80px;
+    opacity: 1;
+    margin-left: 20px;
+}
+
+
+/*section1*/
+
+.section1{
+    background-image :url("../img/section1/hero-background.jpg");
+    background-size: cover;
+    border: 2px black solid;
+}
+#titre1{
+    font-size: 5.5vw;
+    line-height: 120%;
+    font-weight: 900;
+    margin-bottom: 4vh;
+    color: #fff;
+}
+
+/*section2*/
+
+/*section3*/
+
+/*section4*/
+
+/*section5*/
+
+/*section6*/
+
+/*section7*/
+
+/*section8*/
+
+/*section9*/
+
+/*section10*/
+
+/*section11*/
+
+/*footer*/
