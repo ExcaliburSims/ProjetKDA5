@@ -5,17 +5,56 @@
     padding: 0%;
     font-family: 'Montserrat';
 } */
-body{
-    margin: 0px;
-    font-family: 'Montserrat';
+
+@font-face{
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/1584537932815-Roboto-Bold.ttf'),
+    url('../fonts/Roboto/1584537932594-Roboto-BoldItalic.ttf'),
+    url('../fonts/Roboto/1584537932594-Roboto-Italic.ttf'),
+    url('../fonts/Roboto/1584537932594-Roboto-Light.ttf'),
+    url('../fonts/Roboto/1584537932707-Roboto-LightItalic.ttf'),
+    url('../fonts/Roboto/1584537932707-Roboto-Medium.ttf'),
+    url('../fonts/Roboto/1584537932707-Roboto-MediumItalic.ttf'),
+    url('../fonts/Roboto/1584537932758-Roboto-Regular.ttf'),
+    url('../fonts/Roboto/1584537932759-Roboto-Thin.ttf'),
+    url('../fonts/Roboto/1584537932759-Roboto-ThinItalic.ttf'),
+    url('../fonts/Roboto/1584537932815-Roboto-Black.ttf'),
+    url('../fonts/Roboto/1584537932815-Roboto-BlackItalic.ttf');
+
 }
 @font-face {
     font-family: 'Montserrat';
-    src: url('/home/sims/KDA/PROJET/Projet5/fonts/Montserrat/1584538825119-Montserrat-Bold.ttf');
+    src: url('../fonts/Montserrat/1584538825017-Montserrat-Black.ttf'),
+    url('../fonts/Montserrat/1584538824370-Montserrat-ExtraLightItalic.ttf'),
+    url('../fonts/Montserrat/1584538824370-Montserrat-Italic.ttf'),
+    url('../fonts/Montserrat/1584538824370-Montserrat-Light.ttf'),
+    url('../fonts/Montserrat/1584538824580-Montserrat-LightItalic.ttf'),
+    url('../fonts/Montserrat/1584538824580-Montserrat-Medium.ttf'),
+    url('../fonts/Montserrat/1584538824580-Montserrat-MediumItalic.ttf'),
+    url('../fonts/Montserrat/1584538824881-Montserrat-Regular.ttf'),
+    url('../fonts/Montserrat/1584538824881-Montserrat-SemiBold.ttf'),
+    url('../fonts/Montserrat/1584538824882-Montserrat-SemiBoldItalic.ttf'),
+    url('../fonts/Montserrat/1584538825017-Montserrat-Thin.ttf'),
+    url('../fonts/Montserrat/1584538825017-Montserrat-ThinItalic.ttf'),
+    url('../fonts/Montserrat/1584538825119-Montserrat-BlackItalic.ttf'),
+    url('../fonts/Montserrat/1584538825119-Montserrat-Bold.ttf'),
+    url('../fonts/Montserrat/1584538825133-Montserrat-BoldItalic.ttf'),
+    url('../fonts/Montserrat/1584538828193-Montserrat-ExtraBold.ttf'),
+    url('../fonts/Montserrat/1584538828193-Montserrat-ExtraBoldItalic.ttf'),
+    url('../fonts/Montserrat/1584538828193-Montserrat-ExtraLight.ttf');
+    
     }
+body{
+    margin: 0px;
+    font-family: 'Roboto',sans-serif;
+}
 h1,h2,h3,h4,h5,h6,p{
     font-family: 'Montserrat',sans-serif;
 }
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+}
+
 /*Header*/
 
 header{
@@ -23,33 +62,45 @@ header{
     border: #d92950 1px solid;
     position: fixed;
     width: 100vw;
-    /*margin-top: 0px;*/
+    height: 2.0cm;
+    z-index: 20;
 }
 header div{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-header div ul{
+.navp{
+    height: 2.0cm;
+    margin-top: 0px;
+}
+.nav{
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    margin-right: 20px;
-    margin-top: 20px;
-    float: left;
+    margin-top: 30px;
+    padding-right: 25px;
 }
-header div ul li{
-    margin: 30px;
+.nav li{
+    margin-right: 30px;
 }
-header div ul li a{
+.nav li a{
     color: #fff;
     text-decoration: none;
-    font-weight: 600;
+    padding-right: 20px;
+    font-size: 1rem;
+}
+.nav li a:hover{
+    text-decoration: underline white;
 }
 #logo{
     width: 80px;
+    height: 50px;
     opacity: 1;
     margin-left: 20px;
+}
+.logo{
+    margin-top: 10px;
 }
 
 
@@ -77,15 +128,19 @@ header div ul li a{
     justify-content: center;
     margin-top: 100px;
 }
-.btn1 #btn1{
-    text-decoration: none;
-    background-color: seashell;
-    color: #d92950;
+.btn1 div{
+    background-color: white;
     border-radius: 15px;
-    padding: 15px;
+    border-width: 2px;
+    padding: 15px 30px;
     margin: 15px;
 }
 .btn1 a{
+    text-decoration: none;
+    color: #d92950;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.5;
     border-width: 2px;
 }
 .section1 p{
@@ -112,6 +167,55 @@ header div ul li a{
 }
 
 /*section2*/
+
+.section2{
+    background-color: #f1f0f3;
+    color:#424345;
+    border: 1px solid #f1f0f3;
+}
+#campusKDA{
+    width: 725px;
+    height: 525px;
+    margin-left: 0px;
+    position: relative;
+    border-radius: 0px 20px 20px 0px;
+}
+#etudiant{
+    width: 420px;
+    height: 300px;
+    position: relative;
+    border-radius: 20px;
+    bottom: 270px;
+    right: -350px;
+}
+.secgen2{
+    display: flex;
+    flex-direction: row;
+}
+/* .divd{
+    margin-left: 150px;
+} */
+.divd h1{
+    font-size: 2.5rem;
+    line-height: 1.2;
+    text-align: left;
+}
+.divimag >div{
+    width: 520px;
+    height: 145px;
+}
+.divimag{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#imgico{
+    width: 50px;
+    height: 90px;
+}
 
 /*section3*/
 
