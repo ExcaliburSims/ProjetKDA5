@@ -172,6 +172,7 @@ header div{
     background-color: #f1f0f3;
     color:#424345;
     border: 1px solid #f1f0f3;
+    height: 760px;
 }
 #campusKDA{
     width: 725px;
@@ -189,50 +190,261 @@ header div{
     right: -350px;
 }
 .secgen2{
-    display: flex;
+    display:inline-flex;
     flex-direction: row;
+    /* justify-content: space-between; */
+    align-content: center;
+
 }
-/* .divd{
-    margin-left: 150px;
+/* .divg{
+    
 } */
 .divd h1{
     font-size: 2.5rem;
     line-height: 1.2;
     text-align: left;
 }
-.divimag >div{
-    width: 520px;
-    height: 145px;
-}
 .divimag{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-left: 100px;
+    grid-column-gap: 200px;
 }
-
+.divd{
+    margin-left: 150px;
+}
 #imgico{
     width: 50px;
     height: 90px;
+    border-bottom:solid 2px #d92950;
+    padding: 10px;
 }
 
 /*section3*/
 
+.section3{
+    background-color: #d92950;
+    border: 1px solid #d92950 ;
+    height: 550px;
+    color: #fff;
+}
+.slide1{
+    display: flex;
+    flex-direction: row;
+}
+.secgen3{
+    display: flex;
+    flex-direction: column;
+}
+.secgen3 h2{
+    text-align: center;
+    margin-top: 120px;
+    padding: 50px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.slide1 img{
+    width: 100px;
+    height: 90px;
+    padding: 50px;
+}
+
 /*section4*/
+
+.section4{
+    height: 640px;
+    background-color: #f1f0f3;
+    border: 1px solid #f1f0f3;
+}
+.secgen4{
+    margin-top: 100px;
+}
+.secgen4 h2{
+    text-align: center;
+    margin-top: 120px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #35266e;
+}
+.blocgen4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 80px;
+}
+.blocgen4 div{
+    width: 600px;
+    height: 280px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 0px 0px 20px 20px;
+}
+.bloc41{
+    border-top: 10px #ffe64d solid;
+    text-align: center;
+}
+/* .bloc41 a{
+    color: aqua;
+} */
+.bloc42{
+    border-top: 10px #d92950 solid;
+    margin-left: 50px;
+    text-align: center;
+}
+.blocgen4 h3{
+    color:#d92950 ;
+    text-align: center;
+    font-size: 28px;
+    line-height: 33.6px;
+}
+.blocgen4 p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 4em;
+}
+.blocgen4 a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.25rem;
+    height: 50px;
+    width: 300px;
+    background-color: #d92950;
+    border-radius: 15px;
+    padding: 15px 30px;
+    margin-top: 100px;
+}
 
 /*section5*/
 
+.section5{
+    background-color: #d92950;
+    border: 1px solid #d92950 ;
+    color: #fff;
+    height: 850px;
+}
+.secgen5{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.section5 h2{
+    text-align: center;
+    margin-top: 120px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+.slide5{
+    display: flex;
+    flex-direction: row;
+}
+.slide5 div img{
+    width: 330px;
+    height: 413px;
+    margin: 50px;
+    border-radius: 15px;
+}
+
 /*section6*/
 
+.secgen6{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.bloc61{
+    width: 670px;
+    height: 450px;
+    border: 2px solid red;
+}
+.bloc62{
+    width: 500px;
+    height: 450px;
+    border: 2px solid red;
+}
+.blocgen6{
+    display: flex;
+    flex-direction: row;
+}
+.icon6{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
 /*section7*/
+
+.section7{
+    background-color: #ae3753;
+    border: 1px solid #ae3753;
+}
 
 /*section8*/
 
 /*section9*/
 
+.section9{
+    background-color: #111111;
+    border:1px solid #111111;
+}
+
 /*section10*/
 
 /*section11*/
 
+.section11{
+    background-color: #24202b;
+    border:1px solid #24202b;
+}
+
 /*footer*/
+.foot{
+    background-color: #313131;
+    border:1px solid #313131;
+    height: 670px;
+    color: #fff;
+}
+.blocf1{
+    height: 400px;
+    width: 600px;
+}
+.blocf1 address{
+    margin-bottom: 2rem;
+    text-align: left;
+    width: 570px;
+    height: 235px;
+    font-size: 1.4rem;
+}
+.blocf1 a{
+    text-decoration: none;
+    color: #d92950;
+    font-size: 1.4rem;
+    text-align: left;
+}
+.blocf2{
+    height: 400px;
+    width: 600px;
+    font-size: 1.4rem;
+}
+.blocf2 form{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 600px;
+}
+form #btnf{
+    color: #fff;
+    background-color: #d92950;
+}
+
+.fgen{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15vh;
+}
+ .blocf1 ul li{
+    display: inline-block;
+}
